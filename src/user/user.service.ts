@@ -120,6 +120,7 @@ export class UserService {
   private buildUserRO(user: User): IUserRO {
     return {
       user: {
+        bio: user.bio,
         email: user.email,
         image: user.image,
         token: this.generateJWT(user),
